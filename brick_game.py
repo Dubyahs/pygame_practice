@@ -152,7 +152,6 @@ def redraw():
     if game.ball.y <= 0:
         game.ball.direction = (360 - game.ball.direction) % 360
     elif game.ball.y > DISPLAY_HEIGHT - game.ball.h:
-        #game.ball.direction = (360 - game.ball.direction) % 360
         if game.lives == 0:
             game.reset_game()
         else:
